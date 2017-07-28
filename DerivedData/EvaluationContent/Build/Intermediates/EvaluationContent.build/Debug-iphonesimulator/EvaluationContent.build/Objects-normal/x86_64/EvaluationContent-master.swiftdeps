@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "1a1eddab855712a253bfc34bce46d9b2"
+build_time: [554284360, 120743000]
+inputs:
+  "/Users/leo/Desktop/\u5C08\u984C_APP_\u85AA\u85AA\u5411\u69AE/XcodeFile/EvaluationContent/EvaluationContent/ViewController.swift": !dirty [554283310, 0]
+  "/Users/leo/Desktop/\u5C08\u984C_APP_\u85AA\u85AA\u5411\u69AE/XcodeFile/EvaluationContent/EvaluationContent/AppDelegate.swift": [554216172, 0]
+  "/Users/leo/Desktop/\u5C08\u984C_APP_\u85AA\u85AA\u5411\u69AE/XcodeFile/EvaluationContent/EvaluationContent/MyTableViewCell.swift": !dirty [554284277, 0]

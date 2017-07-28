@@ -12,6 +12,11 @@
 		08B5C1A31F2625ED00C1948D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B5C1A11F2625ED00C1948D /* Main.storyboard */; };
 		08B5C1A51F2625ED00C1948D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B5C1A41F2625ED00C1948D /* Assets.xcassets */; };
 		08B5C1A81F2625ED00C1948D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B5C1A61F2625ED00C1948D /* LaunchScreen.storyboard */; };
+		08B5C1B01F26293400C1948D /* icon_star_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B5C1AF1F26293400C1948D /* icon_star_orange.png */; };
+		08B5C1B41F26297D00C1948D /* icon_star_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B5C1B31F26297D00C1948D /* icon_star_outline.png */; };
+		08B5C1B61F263CBF00C1948D /* aventa_c.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B5C1B51F263CBF00C1948D /* aventa_c.png */; };
+		5AE8E44E1F2A373D003EFB3A /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8E44D1F2A373D003EFB3A /* FloatRatingView.swift */; };
+		B3C8A6381F272B2C003C1530 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C8A6371F272B2C003C1530 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		08B5C1A41F2625ED00C1948D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B5C1A71F2625ED00C1948D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B5C1A91F2625EE00C1948D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B5C1AF1F26293400C1948D /* icon_star_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_orange.png; sourceTree = "<group>"; };
+		08B5C1B31F26297D00C1948D /* icon_star_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_outline.png; sourceTree = "<group>"; };
+		08B5C1B51F263CBF00C1948D /* aventa_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aventa_c.png; sourceTree = "<group>"; };
+		5AE8E44D1F2A373D003EFB3A /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		B3C8A6371F272B2C003C1530 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +64,13 @@
 		08B5C19C1F2625EC00C1948D /* EvaluationContent */ = {
 			isa = PBXGroup;
 			children = (
+				5AE8E44D1F2A373D003EFB3A /* FloatRatingView.swift */,
+				08B5C1B51F263CBF00C1948D /* aventa_c.png */,
+				08B5C1B31F26297D00C1948D /* icon_star_outline.png */,
+				08B5C1AF1F26293400C1948D /* icon_star_orange.png */,
 				08B5C19D1F2625EC00C1948D /* AppDelegate.swift */,
 				08B5C19F1F2625EC00C1948D /* ViewController.swift */,
+				B3C8A6371F272B2C003C1530 /* MyTableViewCell.swift */,
 				08B5C1A11F2625ED00C1948D /* Main.storyboard */,
 				08B5C1A41F2625ED00C1948D /* Assets.xcassets */,
 				08B5C1A61F2625ED00C1948D /* LaunchScreen.storyboard */,
@@ -123,9 +138,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B5C1B01F26293400C1948D /* icon_star_orange.png in Resources */,
+				08B5C1B61F263CBF00C1948D /* aventa_c.png in Resources */,
 				08B5C1A81F2625ED00C1948D /* LaunchScreen.storyboard in Resources */,
 				08B5C1A51F2625ED00C1948D /* Assets.xcassets in Resources */,
 				08B5C1A31F2625ED00C1948D /* Main.storyboard in Resources */,
+				08B5C1B41F26297D00C1948D /* icon_star_outline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +156,8 @@
 			files = (
 				08B5C1A01F2625EC00C1948D /* ViewController.swift in Sources */,
 				08B5C19E1F2625EC00C1948D /* AppDelegate.swift in Sources */,
+				5AE8E44E1F2A373D003EFB3A /* FloatRatingView.swift in Sources */,
+				B3C8A6381F272B2C003C1530 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +319,7 @@
 				08B5C1AE1F2625EE00C1948D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
