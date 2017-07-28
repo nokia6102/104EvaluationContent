@@ -21,17 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="對與這次的交談，你給予的評價" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdX-F7-z3o">
-                                <rect key="frame" x="107" y="28" width="200" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNR-lr-zpf" customClass="FloatRatingView" customModule="EvaluationContent" customModuleProvider="target">
-                                <rect key="frame" x="107" y="55" width="216" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNR-lr-zpf" customClass="FloatRatingView" customModule="EvaluationContent" customModuleProvider="target">
+                                <rect key="frame" x="99" y="55" width="216" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="whN-G5-d6E"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="icon_star_outline.png"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="icon_star_orange.png"/>
@@ -51,7 +46,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="十分愉快的交談過程，對於工作內容及公司的介紹都十分清楚，對專業的要求可以清楚的說明並溝通！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW4-AA-V7C">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW4-AA-V7C">
                                 <rect key="frame" x="20" y="116" width="374" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -74,7 +69,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qqa-v1-1ta" id="gzx-Gi-9l5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="148.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="算是業界很資深的報關行, 很多訊息或是經驗都有得傳承, 所以在工作上遇到困難可以獲得協助. 老闆也很願意讓新員工多做多學, 有加班都可以依照實際情況核報." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeZ-BI-vxw">
@@ -104,10 +99,24 @@
                                     <outlet property="delegate" destination="sAm-A4-vH8" id="IrJ-nY-63y"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="對與這次的交談，你給予的評價" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdX-F7-z3o">
+                                <rect key="frame" x="107" y="28" width="200" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tNR-lr-zpf" secondAttribute="bottom" constant="645" id="VMh-Bx-nbN"/>
+                            <constraint firstItem="tNR-lr-zpf" firstAttribute="top" secondItem="2Dw-uI-SKd" secondAttribute="top" constant="55" id="wlY-rZ-daY"/>
+                            <constraint firstItem="tNR-lr-zpf" firstAttribute="centerX" secondItem="2Dw-uI-SKd" secondAttribute="centerX" id="yeu-Ap-Vee"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="floatRatingView" destination="tNR-lr-zpf" id="0eW-z7-Haw"/>
+                        <outlet property="lblDesc" destination="tW4-AA-V7C" id="iF2-6l-x2p"/>
                         <outlet property="myTableView" destination="XoT-iV-8oB" id="xyG-hx-co9"/>
                     </connections>
                 </viewController>
